@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
+    "dateformat": "^5.0.3",
+    "framer-motion": "^11.2.12",
+    "next": "14.2.4",
+    "number-formatter": "^1.2.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "react-icons": "^5.2.1",
+    "react-player": "^2.16.0",
+    "react-redux": "^9.1.2",
+    "react-star-ratings": "^2.3.0"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
