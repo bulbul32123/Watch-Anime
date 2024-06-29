@@ -1,6 +1,7 @@
 import React from 'react'
 import CardButtons from './CardButton'
 import { formatNumber } from '../home/Number'
+import Image from 'next/image'
 export default function CardDetails({ item, setShowVideo, setVideoId, setShowCardDetail, showCardDetail }) {
     const hideCardDetail = () => {
         setShowCardDetail(false)
@@ -47,7 +48,7 @@ export default function CardDetails({ item, setShowVideo, setVideoId, setShowCar
                                 <p className='pt-2 pb-1 text-sm text-red-600 font-bold sm:text-base'>Overview</p>
                                 <p className='text-sm font-light text-gray-200 sm:text-base md:text-base'>{item?.description}</p>
                             </div>
-                            <img src={item?.poster} className='sm:h-60 sm:w-40 w-32 h-52 shadow-white/55 shadow-lg rounded-md -mt-20 object-cover object-center pointer-events-none select-none' alt={item?.title[0]} />
+                            <Image height={100} width={100} src={item?.poster} className='sm:h-60 sm:w-40 w-32 h-52 shadow-white/55 shadow-lg rounded-md -mt-20 object-cover object-center pointer-events-none select-none' alt={item?.title[0]} />
                         </div>
                     </div>
                 </div>

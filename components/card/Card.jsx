@@ -4,6 +4,7 @@ import CardClicks from './CardClicks'
 import dateFormat from "dateformat";
 import { formatNumber } from '../home/Number'
 import DeleteCardIcon from './DeleteCardIcon'
+import Image from 'next/image';
 
 export default function Card({ item, isFavorite }) {
     return (
@@ -11,7 +12,7 @@ export default function Card({ item, isFavorite }) {
             <div className='relative poster'>
                 <div className="relative">
                     <DeleteCardIcon isFavorite={isFavorite} item={item} />
-                    <img src={item?.poster} alt={item?.title[0]} className='relative img w-full h-[23rem] imgObject imgSelectNone rounded' />
+                    <Image height={100} width={100} src={item?.poster} alt={item?.title[0]} className='relative img w-full h-[23rem] imgObject imgSelectNone rounded' />
                     <div className="absolute top-0 left-0 w-full h-full bg-black/80 rounded detail">
                         <div className="flex flex-col p-2">
                             <div className="flex flex-col gap-2">

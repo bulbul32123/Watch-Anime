@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FaHeart } from "react-icons/fa";
 import Hamburger from './Hamburger';
+import Image from 'next/image';
 
 export default function Header() {
     return (
@@ -8,7 +9,7 @@ export default function Header() {
             <header className={`text-gray-400 w-full body-font relative z-[14]`}>
                 <div className="pl-4 pr-4 mx-auto flex flex-wrap py-5 justify-between items-center">
                     <Link href='/' className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                        <img src="/logo.png" className='h-14 select-none object-cover object-center' alt="LOGO" />
+                        <Image height={100} width={100} src="/logo.png" className='h-14 select-none object-cover object-center' alt="LOGO" />
                         <span className="text-xl">Watch</span>
                     </Link>
                     <nav className="md:mr-auto max-md:hidden md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">

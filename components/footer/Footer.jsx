@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -10,7 +11,7 @@ export default function Footer() {
             <footer className="text-gray-400 body-font">
                 <div className="container px-5 py-8 mx-auto flex items-center max-sm:justify-between sm:flex-row">
                     <Link href='/' className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                        <img src="/logo.png" className='h-14 select-none object-cover object-center' alt="LOGO" />
+                        <Image height={100} width={100} src="/logo.png" className='h-14 select-none object-cover object-center' alt="LOGO" />
                         <span className="text-xl pt-3">Watch</span>
                     </Link>
                     <div className="text-sm max-sm:hidden text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:pt-4 sm:mt-0 mt-4">© 2024 watch —

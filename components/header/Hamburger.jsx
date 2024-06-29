@@ -2,13 +2,14 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { FaHeart } from 'react-icons/fa'
+import { FaHamburger } from "react-icons/fa";
 
 export default function Hamburger() {
     const [openMenuBar, setOpenMenuBar] = useState(false);
     return (
         <>
             <button onClick={() => setOpenMenuBar(true)} className=" bg-gray-800 border-0 py-2 px-3 focus:outline-none hover:bg-gray-700 md:hidden  rounded text-base md:mt-0">
-                <FaHeart size={24} />
+                <FaHamburger size={24} />
             </button>
 
             {
